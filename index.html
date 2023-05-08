@@ -1,27 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator by Dagatan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <title>Dagatan Calculator Design</title>
+
+
 </head>
-
 <body>
-    <header>
-
-    </header>
-    <main class="bg-slate-100">
-      <div class="p-3 text-white text-center  text-3xl bg-blue-300 font-extrabold"><span class="text-black">Dagatan</span>Calculator</div>
-        <div class="flex justify-center items-center min-h-screen">
-            <div class="p-4 border border-solid shadow-white border-white-400 bg-black rounded-xl">
-                <p id="outputScreen"
-                    class="mb-5 p-5 font-extrabold rounded-xl text-white bg-black text-right"></p>
-                <div class="grid grid-cols-4 gap-4">
-                        <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
+    <div class="mx-auto overflow-hidden mt-5 mb-1 bg-blue-400 border rounded-lg md:w-96 sm:w-1/2">
+        <div class="">
+          <div class="p-3 text-white text-center  text-3xl bg-blue-300 font-extrabold"><span class="text-black">Dagatan</span>Calculator</div>
+          <div class="p-4 border border-solid shadow-white border-white-400 bg-black rounded-xl">
+            <p id="outputScreen"
+                class="mb-5 p-5 font-extrabold rounded-xl text-white bg-black text-right"></p>
+            <div class="grid grid-cols-4 gap-4">
+                    <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
                         onclick="clr()">C</button>
                     <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
                         onclick="del()">Del</button>
@@ -53,19 +50,17 @@
                         onclick="display('3')">3</button>
                     <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
                         onclick="display('+')">+</button>
-                    <button class="rounded-full border-solid bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none text-white col-span-2"
+                    <button class="rounded-full text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none col-span-2"
                         onclick="display('0')">0</button>
                     <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
                         onclick="display('.')">.</button>
-                    <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-blue-400 justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
+                    <button class="rounded-full h-16 w-16 text-white font-bold flex items-center bg-black justify-center border-2 border-blue-400 hover:border-2 hover:border-gray-500 focus:outline-none"
                         onclick="calc()">=</button>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-
-    </footer>
+        </div>    
+      </div>
+    </div>
+    
 </body>
-
 </html>
